@@ -169,7 +169,7 @@ function Doctors() {
                 <strong>Location:</strong> {doctor.location || doctor.city || 'Unknown'}
               </p>
 
-              {hasBackendDoctors ? (
+              {isUsingBackend ? (
                 <Link to={`/appointment?doctorId=${doctor._id}`}>
                   <button className="doctor-btn">Book Appointment</button>
                 </Link>
